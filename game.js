@@ -240,12 +240,12 @@ function initGame() {
     // === 3. GAME ENGINE ===
     // Asset Preloading
     const assets = {
-        player: 'assets/player.png', playerRun: 'assets/player_run.png', playerSlide: 'assets/player_slide.png',
-        hateSnake: ['assets/hate_snake_1.png', 'assets/hate_snake_2.png', 'assets/hate_snake_3.png', 'assets/hate_snake_4.png', 'assets/hate_snake_5.png'],
-        dislike: 'assets/dislike_monster.png', 
-        coin: 'assets/coin.png', heal: 'assets/item_heal.png', 
-        bg1: 'assets/bg_layer1.png', bg2: 'assets/bg_layer2.png', bg3: 'assets/bg_layer3.png',
-        plane: 'assets/airplane.png', missile: 'assets/missile.png', bomb: 'assets/bomb.png'
+        player: '/assets/player.png', playerRun: '/assets/player_run.png', playerSlide: '/assets/player_slide.png',
+        hateSnake: ['/assets/hate_snake_1.png', '/assets/hate_snake_2.png', '/assets/hate_snake_3.png', '/assets/hate_snake_4.png', '/assets/hate_snake_5.png'],
+        dislike: '/assets/dislike_monster.png', 
+        coin: '/assets/coin.png', heal: '/assets/item_heal.png', 
+        bg1: '/assets/bg_layer1.png', bg2: '/assets/bg_layer2.png', bg3: '/assets/bg_layer3.png',
+        plane: '/assets/airplane.png', missile: '/assets/missile.png', bomb: '/assets/bomb.png'
     };
     const images = { hateSnake: [] };
     images.player = new Image(); images.player.src = assets.player;
@@ -265,14 +265,14 @@ function initGame() {
     });
 
     const sfx = {
-        bgm: new Audio('assets/bgm.mp3'),
-        jump: new Audio('assets/jump.mp3'),
-        slide: new Audio('assets/slide.mp3'),
-        damage: new Audio('assets/damage.mp3'),
-        coin: new Audio('assets/coin.mp3'),
-        heal: new Audio('assets/heal.mp3'),
-        gameover: new Audio('assets/gameover.mp3'),
-        quake: new Audio('assets/bg_white_noise1.mp3') // Continuous ground vibration rumble!
+        bgm: new Audio('/assets/bgm.mp3'),
+        jump: new Audio('/assets/jump.mp3'),
+        slide: new Audio('/assets/slide.mp3'),
+        damage: new Audio('/assets/damage.mp3'),
+        coin: new Audio('/assets/coin.mp3'),
+        heal: new Audio('/assets/heal.mp3'),
+        gameover: new Audio('/assets/gameover.mp3'),
+        quake: new Audio('/assets/bg_white_noise1.mp3') // Continuous ground vibration rumble!
     };
     sfx.bgm.loop = true;
     sfx.bgm.volume = 0.5;
