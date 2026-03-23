@@ -157,7 +157,7 @@ body {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background-image: url('assets/xiaogao.png');
+    background-image: url('/assets/xiaogao.png');
     background-size: cover;
     background-position: center;
     cursor: pointer;
@@ -177,7 +177,7 @@ body {
     height: calc(16.14vw);
     min-height: 100px;
     max-height: 212px;
-    background: url('assets/banner.png') center/cover no-repeat;
+    background: url('/assets/banner.png') center/cover no-repeat;
     border-radius: 12px;
     margin-top: 16px;
     display: flex;
@@ -199,7 +199,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('assets/banner.png') center/cover no-repeat;
+    background: url('/assets/banner.png') center/cover no-repeat;
     color: rgba(255,255,255,0.7);
     pointer-events: none;
 }
