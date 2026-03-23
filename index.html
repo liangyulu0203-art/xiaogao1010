@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-TW" dark="true">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你也可以叫我小高 - YouTube</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tabs.css">
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="yt-navbar">
+        <div class="nav-left">
+            <button class="icon-btn menu-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg>
+            </button>
+            <a href="#" class="yt-logo-container">
+                <svg viewBox="0 0 24 24" width="30" height="20" fill="#FF0000"><path d="M21.582 6.186a2.766 2.766 0 00-1.946-1.956C17.918 3.75 12 3.75 12 3.75s-5.918 0-7.636.48a2.766 2.766 0 00-1.946 1.956C1.94 7.91 1.94 12 1.94 12s0 4.09.478 5.814a2.766 2.766 0 001.946 1.956C6.082 20.25 12 20.25 12 20.25s5.918 0 7.636-.48a2.766 2.766 0 001.946-1.956C22.06 16.09 22.06 12 22.06 12s0-4.09-.478-5.814zM9.91 15.65V8.35L16.208 12l-6.298 3.65z"/></svg>
+                <span class="yt-logo-text" style="font-family: 'Oswald', 'Roboto', sans-serif; font-weight: 700; font-size: 20px; color: white; letter-spacing: -1px; margin-left: 4px;">YouTube</span>
+            </a>
+        </div>
+        <div class="nav-center">
+            <div class="search-box">
+                <div class="search-input-container">
+                    <div class="search-icon-internal">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.87 20.17l-5.59-5.59A6.96 6.96 0 1011 18c1.64 0 3.14-.56 4.34-1.5l5.6 5.6.93-.93zM5 11a6 6 0 1112 0 6 6 0 01-12 0z"/></svg>
+                    </div>
+                    <input type="text" placeholder="搜尋">
+                    <button class="keyboard-btn">
+                        <img src="https://www.gstatic.com/inputtools/images/tia.png" alt="Keyboard" width="19" height="11" style="opacity: 0.6; filter: invert(1);">
+                    </button>
+                </div>
+                <button class="search-btn" title="搜尋">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.87 20.17l-5.59-5.59A6.96 6.96 0 1011 18c1.64 0 3.14-.56 4.34-1.5l5.6 5.6.93-.93zM5 11a6 6 0 1112 0 6 6 0 01-12 0z"/></svg>
+                </button>
+            </div>
+            <button class="icon-btn mic-btn" title="透過語音搜尋">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 14c1.66 0 3-1.34 3-3V6c0-1.66-1.34-3-3-3s-3 1.34-3 3v5c0 1.66 1.34 3 3 3zm5-3c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
+            </button>
+        </div>
+        <div class="nav-right">
+            <button class="icon-btn" title="建立">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"/></svg>
+            </button>
+            <button class="icon-btn" title="通知" style="position: relative;">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42l-1.5-1.41v-5.47c0-2.67-1.92-5-4.78-5.46L12 5.3l-.72.12C8.42 5.88 6.5 8.2 6.5 10.87v5.47L5 17.77v.65h14v-.65z"/></svg>
+                <div class="notification-badge">9+</div>
+            </button>
+            <div class="user-avatar" style="margin-left: 8px;"></div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="channel-container">
+        <!-- Banner -->
+        <div class="channel-banner" id="glitch-banner" data-text="「解構人設 / 虛幻的流量極限」">
+            「解構人設 / 虛幻的流量極限」
+        </div>
+
+        <!-- Channel Header -->
+        <div class="channel-header">
+            <div class="header-content">
+                <div class="channel-avatar">
+                    <img src="assets/xiaogao.png" alt="小高 Avatar">
+                </div>
+                <div class="channel-info">
+                    <h1>你也可以叫我小高</h1>
+                    <div class="channel-meta">
+                        <span>@xiaogao_official</span>
+                        <span>124萬位訂閱者</span>
+                        <span>128部影片</span>
+                    </div>
+                    <div class="channel-desc">
+                        哈囉大家好，我是小高！帶你一起探索生活的美好～ 喜歡請訂閱！✨
+                    </div>
+                    <div class="action-buttons">
+                        <button class="subscribe-btn">訂閱</button>
+                        <button class="live-btn" id="start-live-btn"><span class="live-dot"></span>開始直播</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Channel Tabs -->
+        <div class="channel-tabs" id="channel-tabs">
+            <div class="tab active" data-target="tab-home">首頁</div>
+            <div class="tab" data-target="tab-videos">影片</div>
+            <div class="tab" data-target="tab-shorts">Shorts</div>
+            <div class="tab" data-target="tab-live">直播</div>
+            <div class="tab" data-target="tab-playlists">播放清單</div>
+            <div class="tab" data-target="tab-community">社群</div>
+            <div class="tab-search">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.87 20.17l-5.59-5.59A6.96 6.96 0 1011 18c1.64 0 3.14-.56 4.34-1.5l5.6 5.6.93-.93zM5 11a6 6 0 1112 0 6 6 0 01-12 0z"/></svg>
+            </div>
+        </div>
+
+        <!-- Channel Content Area -->
+        <div class="channel-content-area">
+            
+            <div id="tab-home" class="tab-content active">
+                <!-- Featured Video / Truth Slider -->
+                <div class="featured-section">
+                    <div class="featured-video-player" style="padding: 0; background: none;">
+                        <div class="truth-slider" id="truth-slider">
+                            <div class="slider-image before-image">
+                                <div class="slider-label">表象：無暇網紅</div>
+                            </div>
+                            <div class="slider-image after-image" id="slider-after">
+                                <div class="slider-label">真相：冰冷底層</div>
+                            </div>
+                            <div class="slider-handle" id="slider-handle">
+                                <div class="handle-line"></div>
+                                <div class="handle-btn">↔</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-details">
+                        <h2 class="featured-title">《你也可以叫我小高》互動前導體驗（滑動以解構人設）</h2>
+                        <div class="featured-meta">拖拉滑桿揭開濾鏡的假象</div>
+                    </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- About Project Section -->
+                <div class="about-project-section" style="display: flex; gap: 24px; padding: 20px 0; max-width: 1280px; flex-wrap: wrap;">
+                    
+                    <!-- Text Content (Left Side) -->
+                    <div class="about-text-content" style="flex: 1; min-width: 300px; color: #f1f1f1;">
+                        <h3 style="font-size: 22px; font-weight: 500; margin-bottom: 24px;">《你也可以叫我小高》計畫</h3>
+                        
+                        <h4 style="font-size: 17px; color: #aaa; margin-top: 16px; margin-bottom: 8px;">💡 創作動機</h4>
+                        <p style="font-size: 15px; line-height: 1.6; color: #ddd; margin-bottom: 24px;">現代人對社群媒體極度依賴，造就了「網紅文化」與「人設經營」的興盛。然而，在光鮮亮麗的螢幕背後，隱藏著多少數據綁架與自我迷失？我們想探討當名氣、生活成為一種演算法消費品，觀眾與創作者之間的關係到底是由誰在操控。</p>
+                        
+                        <h4 style="font-size: 17px; color: #aaa; margin-top: 16px; margin-bottom: 8px;">👁️ 核心理念</h4>
+                        <p style="font-size: 15px; line-height: 1.6; color: #ddd; margin-bottom: 24px;">透過「解構化」的手法，將大眾最熟悉的 YouTube 介面轉化為一場數位廢墟的探險。你不再只是被動的觀看者，而是親手剝去流量濾鏡的參與者。從完美的表象直墜冰冷的伺服器底層，見證數位時代的荒誕。</p>
+                        
+                        <h4 style="font-size: 17px; color: #aaa; margin-top: 16px; margin-bottom: 8px;">🎯 未來期望</h4>
+                        <p style="font-size: 15px; line-height: 1.6; color: #ddd;">希望這件作品能引發觀者對於「注意力經濟」與「真實」的深刻反思。團隊正致力於將線上體驗延伸為實體的沉浸式展演，讓這份來自底層的震撼能以更具衝擊力的方式在觀眾面前展現。</p>
+                    </div>
+
+                    <!-- Trailer Video Embed (Right Side) -->
+                    <div class="trailer-container" style="flex: 1; min-width: 300px;">
+                        <h3 style="font-size: 16px; font-weight: 500; margin-bottom: 12px; color: #aaa;">▶ 前導預告</h3>
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+                            <iframe src="https://www.youtube.com/embed/V04LKWlHB00" title="《你也可以叫我小高》前導預告" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-videos" class="tab-content">
+                <div class="videos-section">
+                    <div class="videos-grid">
+                        <!-- Generated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-shorts" class="tab-content">
+                <div class="shorts-section">
+                    <div class="shorts-grid">
+                        <!-- Generated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-live" class="tab-content">
+                <div class="videos-section">
+                    <div class="videos-grid">
+                        <!-- Generated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-playlists" class="tab-content">
+                <div class="videos-section">
+                    <div class="videos-grid">
+                        <!-- Generated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-community" class="tab-content">
+                <!-- Generated by JS -->
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Game Overlay -->
+    <div id="game-overlay" class="hidden">
+        <div class="game-ui">
+            <!-- Pre-Game Menu (Logo & Title) -->
+            <div id="pre-game-menu" class="hidden">
+                <img src="assets/logo.png" class="game-logo" alt="Game Logo">
+                <div class="menu-buttons">
+                    <button id="btn-start-game" class="menu-btn primary">開始遊戲</button>
+                    <button id="btn-leaderboard" class="menu-btn secondary">排行榜</button>
+                </div>
+            </div>
+
+            <!-- In-Game HUD -->
+            <div class="top-hud">
+                <div class="health-bar-container">
+                    <div class="health-icon">❤️</div>
+                    <div class="health-bar-bg">
+                        <div class="health-bar-fill" id="health-bar"></div>
+                    </div>
+                </div>
+                <div class="hud-right-group">
+                    <div class="score-container">
+                        <div class="score-text" id="score-text">0</div>
+                        <div class="coin-text" id="coin-text">🪙 0</div>
+                    </div>
+                    <button id="btn-pause" class="pause-btn">⏸</button>
+                </div>
+            </div>
+
+            <canvas id="game-canvas"></canvas>
+            
+            <div class="controls-overlay">
+                <div class="control-btn" id="btn-slide">Slide (Down)</div>
+                <button class="donate-btn" id="donate-btn">斗內 $<br><span style="font-size: 14px;">(按 D 或 Enter)</span><div class="cd-overlay"></div></button>
+                <div class="control-btn" id="btn-jump">Jump (Up)</div>
+            </div>
+            
+            <div id="danmaku-container"></div>
+            
+            <!-- Pause Overlay -->
+            <div id="pause-overlay" class="hidden">
+                <div class="menu-panel">
+                    <h2>遊戲暫停</h2>
+                    <div class="menu-buttons" style="flex-direction: column;">
+                        <button id="btn-resume" class="menu-btn primary">繼續跑酷</button>
+                        <button id="btn-game-home-pause" class="menu-btn secondary">回遊戲主選單</button>
+                        <button id="btn-website-pause" class="menu-btn danger">回到網站</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="game-over-screen" class="hidden">
+                <div class="menu-panel" style="background:none; border:none; box-shadow:none;">
+                    <div class="end-text" id="end-title" style="color:#0f0;">流量幻滅</div>
+                    <div class="end-score" id="final-score" style="color:#0f0;">最終分數：0</div>
+                    <div class="menu-buttons" style="flex-direction: column; align-items:center;">
+                        <button id="btn-game-home-end" class="retry-btn">回到遊戲主頁</button>
+                        <button id="btn-website-end" class="retry-btn" style="border-color:#ff0055; color:#ff0055;">回到網站</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Airplane Choice Overlay -->
+            <div id="plane-choice-overlay" class="hidden" style="position: absolute; top:0; left:0; width:100%; height:100%; display:flex; justify-content:center; align-items:center; z-index: 2000; background: rgba(0,0,0,0.5);">
+                <div class="menu-panel" style="background: rgba(20,20,30,0.95); border: 2px solid #0ff; padding: 40px; text-align: center; border-radius: 20px; box-shadow: 0 0 20px #0ff;">
+                    <h2 style="color: #0ff; font-size: 32px; text-shadow: 0 0 10px #0ff; margin-bottom: 20px;">神秘特權航班</h2>
+                    <p style="color: #fff; font-size: 20px; margin-bottom: 30px;">前方停靠著一架客機，這也許是你逃離一切的機會...<br><br>「是否要搭上這架流量客機，開啟永無止境的制霸體驗？」</p>
+                    <div class="menu-buttons" style="flex-direction: column; align-items:center;">
+                        <button id="btn-board-plane" class="menu-btn primary" style="background:#0ff; color:#000; box-shadow:0 0 10px #0ff;">搭上飛機 (進入無盡模式)</button>
+                        <button id="btn-refuse-plane" class="menu-btn danger">拒絕搭乘 (離開這場遊戲)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="tabs.js"></script>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
